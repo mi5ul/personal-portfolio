@@ -1,0 +1,61 @@
+/* -------------------- */
+/* BASIC SETUP */
+/* -------------------- */
+
+html {
+	box-sizing: border-box;
+	font-weight: 300;
+	font-size: 20px;
+	text-rendering: optimizeLegibility;
+	color: white;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(markus-spiske-109588-unsplash.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 100vh;
+	/*display: flex;
+	justify-content: center;
+	align-items: center;*/
+	border: 4px solid gray;
+}
+
+.hero-text-box {
+	color: white;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	flex: 2;
+	border: 2px solid white;
+}
+
+.hero-container {
+	border: 2px solid blue;
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+
+}
+
+h1 {
+	text-transform: uppercase;
+	font-size: 3em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+nav {
+	border: 2px solid pink;
+	flex: 1;
+}
