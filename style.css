@@ -16,9 +16,8 @@ html {
 	padding: 0;
 }
 
-
 header {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(markus-spiske-109588-unsplash.jpg);
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.imgur.com/WVnZYIC.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
@@ -43,7 +42,6 @@ header {
 	flex-direction: column;
 	height: 100%;
 	justify-content: center;
-
 }
 
 h1 {
