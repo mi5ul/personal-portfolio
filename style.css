@@ -8,6 +8,7 @@ html {
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	color: white;
+	font-family: 'Courier New', Courier, monospace;
 }
 
 *, *:before, *:after {
@@ -16,12 +17,31 @@ html {
 	padding: 0;
 }
 
+/* -------------------- */
+/* REUSABLE COMPONENTS */
+/* -------------------- */
+
+/* ----- HEADINGS ----- */
+
+h1 {
+	text-transform: uppercase;
+	font-size: 4em;
+	text-align: center;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+/* -------------------- */
+/* HEADER */
+/* -------------------- */
+
 header {
 	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://i.imgur.com/WVnZYIC.jpg);
 	background-size: cover;
 	background-position: center;
 	height: 100vh;
-	border: 4px solid gray;
 }
 
 .hero-text-box {
@@ -30,34 +50,40 @@ header {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	border: 6px solid white;
 	height: 100%;
 }
 
 .hero-container {
-	border: 2px solid blue;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
 }
 
-h1 {
-	text-transform: uppercase;
-	font-size: 3em;
-}
-
-h3 {
-	font-size: 1.5em;
-}
+/* ----- NAV BAR ----- */
 
 nav {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 50px;
-	border: 2px solid pink;
+	padding: 20px 20px;
+	background: rgba(0, 0, 0, 0.4);
 }
 
 nav ul {
 	display: flex;
+	list-style: none;
+}
+
+nav li {
+	margin-left: 20px;
+}
+
+nav a {
+	text-decoration: none;
+	color: white;
+}
+
+nav a:active,
+nav a:hover {
+	border-bottom: 2px solid white;
 }
