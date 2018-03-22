@@ -87,3 +87,17 @@ nav a:active,
 nav a:hover {
 	border-bottom: 2px solid white;
 }
+
+/*Try animate the the <h3> element with:*/
+
+@keyframes typing { from { width: 0; } }
+@keyframes caret { 50% { border-color: transparent; } }
+
+code {
+	width: 13.2em; /* fallback, # of chars × 0.55 */
+	width: 24ch; /* # of characters */
+	border-right: .1em solid;
+	overflow: hidden;
+	animation: typing 12s steps(24, end),
+	           caret .5s step-end infinite alternate;
+}
