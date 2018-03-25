@@ -9,6 +9,7 @@
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
 	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
 
+	<script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 	<header>
@@ -23,7 +24,7 @@
 			</nav>
 
 			<div class="hero-text-box">
-				<h3>Hi, I am Mirt</h3>
+				<h3 class="element"></h3>
 				<h1>Web Developer</h1>
 			</div>
 		</div>
@@ -33,10 +34,3 @@
 
 </body>
 </html>
-<!-- 
-There is an issue that now the <header> is a flexbox and so <nav> get justified and aligned.
-Solution would be to put the "hero-text-box" in another <div> which fills the whole parent <header>
-and then give flex property to this <div> and not to <header> (in order to center the header text).
-
-Flexbox gets too hacky. Use CSS Grid instead!!!
- -->
