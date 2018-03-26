@@ -29,8 +29,19 @@ h1 {
 	text-align: center;
 }
 
-h3 {
-	font-size: 1.5em;
+#typed {
+	font-size: 2em;
+}
+/* Cursor */
+.typed-cursor {
+	font-size: 2em;
+	animation: blink-animation 1s steps(5, start) infinite;
+}
+/* Blinking animation for cursor */
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 /* -------------------- */
