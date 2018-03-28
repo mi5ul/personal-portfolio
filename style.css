@@ -8,7 +8,6 @@ html {
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	color: white;
-	font-family: 'Courier New', Courier, monospace;
 }
 
 *, *:before, *:after {
@@ -29,8 +28,19 @@ h1 {
 	text-align: center;
 }
 
-h3 {
-	font-size: 1.5em;
+#typed {
+	font-size: 4em;
+}
+/* Cursor */
+.typed-cursor {
+	font-size: 4em;
+	animation: blink-animation 1s steps(5, start) infinite;
+}
+/* Blinking animation for cursor */
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }
 
 /* -------------------- */
@@ -59,6 +69,32 @@ header {
 	height: 100%;
 }
 
+/* ----- BUTTONS ----- */
+
+.hero-btn-panel {
+	display: flex;
+	margin-top: 80px;
+}
+
+.hero-btn:link,
+.hero-btn:visited {
+	color: white;
+	text-decoration: none;
+	font-size: 1.2em;
+	border: 2px solid white;
+	padding: 5px;
+	border-radius: 2px;
+	margin-left: 30px;
+	transition: all 0.2s ease-in-out;
+}
+
+.hero-btn:hover,
+.hero-btn:active {
+	/* Cannot transform inline elements(e.g. anchor tags). Could also wrap each btn in a parent div. */
+	display: block;
+	transform: scale(1.1);
+}
+
 /* ----- NAV BAR ----- */
 
 nav {
@@ -78,12 +114,18 @@ nav li {
 	margin-left: 20px;
 }
 
-nav a {
+nav a:link,
+nav a:visited {
 	text-decoration: none;
 	color: white;
+	transition: all 0.2s ease-in-out;
+	border-bottom: 2px solid transparent;
+
 }
 
 nav a:active,
 nav a:hover {
+	display: block;
 	border-bottom: 2px solid white;
+	transform: scale(1.1);
 }
