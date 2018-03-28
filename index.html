@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Mirt Suljič Portfolio</title>
+	<title>Mirt Suljic Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
@@ -14,36 +14,44 @@
 <body>
 	<header>
 		<div class="hero-container">
+			<!-- Navigation Bar -->
 			<nav>
-				<i class="fas fa-user-circle"></i>
+				<div>
+					<i class="fas fa-user-circle"></i>
+					Mirt Suljic
+				</div>
 				<ul>
 					<li><a href="#">About</a></li>
 					<li><a href="#">Work</a></li>
 					<li><a href="#">Contact</a></li>
 				</ul>
 			</nav>
-
+			<!-- Hero Image & Text -->
 			<div class="hero-text-box">
 				<div>
 					<div id="typed-strings">
-				    <p>Hi, my name is Mirt...</p>
-				    <p>I am a Web Developer</p>
+					    <p>Hi, my name is Mirt</p>
+					    <p>I am a Web Developer</p>
 					</div>
 					<span id="typed"></span>
 				</div>
-				<h1>Web Developer</h1>
+				<div class="hero-btn-panel">
+					<a href="#" class="hero-btn">Hire me</a>
+					<a href="#" class="hero-btn">My work</a>
+				</div>
+				
 			</div>
 		</div>
-		
-		
 	</header>
+	
 	<script>
 	  var typed = new Typed('#typed', {
 	    stringsElement: '#typed-strings',
+	    typeSpeed: 30,
+	    backSpeed: 15,
+	    startDelay: 500,
+	    backDelay: 1000,
 	  });
 	</script>
-	
-
-
 </body>
 </html>
