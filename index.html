@@ -2,13 +2,13 @@
 <html>
 <head>
 	<title>Mirt Suljic Portfolio</title>
-
+	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
 
 	<!-- Font Awesome -->
 	<script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
 
-	<script src="lib/typed.js" type="text/javascript"></script>
+	
 </head>
 <body>
 	<!-- Hero image/text -->
@@ -91,15 +91,23 @@
 				</p>
 			</div>
 			<div class="bars-wrapper">
-				<p><i class="fab fa-js"></i>JavaScript</p>
-				<div id="myProgress">
-	  			<div id="myBar">10%</div>
+				<div class="circle-bar">
+					<div id="container1"></div>
+					<p><i class="fab fa-js" style="font-size: 2em;"></i></p>
 				</div>
+				<div class="circle-bar">
+					<div id="container2"></div>
+					<p><i class="fab fa-js" style="font-size: 2em;"></i></p>
+				</div>
+				
 			</div>
 		</div>
 		
 	</section>
 	
+	<script src="lib/typed.js" type="text/javascript"></script>
+	<script src="dist/progressbar.js" type="text/javascript"></script>
+
 	<!-- Animating the typing effect in the header -->
 	<script>
 	  var typed = new Typed('#typed', {
@@ -110,6 +118,47 @@
 	    backDelay: 1000,
 	  });
 	</script>
-	<script type="text/javascript" src="script.js"></script>
+
+	<!-- Circular progress bar -->
+	<script type="text/javascript">
+		const animateCircleBar = (targetElement, percent) => {
+			var bar = new ProgressBar.Circle(targetElement, {
+			  color: '#0059b3',
+			  // This has to be the same size as the maximum width to
+			  // prevent clipping
+			  strokeWidth: 4,
+			  trailWidth: 1,
+			  easing: 'easeInOut',
+			  duration: 1400,
+			  text: {
+			    autoStyleContainer: false
+			  },
+			  from: { color: '#0059b3', width: 1 },
+			  to: { color: '#0059b3', width: 4 },
+			  // Set default step function for all animate calls
+			  step: function(state, circle) {
+			    circle.path.setAttribute('stroke', state.color);
+			    circle.path.setAttribute('stroke-width', state.width);
+
+			    var value = Math.round(circle.value() * 100);
+			    if (value === 0) {
+			      circle.setText('');
+			    } else {
+			      circle.setText(value);
+			    }
+
+		  	}
+			});
+			bar.text.style.fontFamily = '"Raleway", Helvetica, sans-serif';
+			bar.text.style.fontSize = '2rem';
+
+			bar.animate(percent);  // Number from 0.0 to 1.0
+		}	
+		animateCircleBar(container1, 0.8);
+		animateCircleBar(container2, 0.55);
+	</script>
+
+	<!-- Load the JS file for linear bar -->
+	<script type="text/javascript" src="LinearBar.js"></script>
 </body>
 </html>

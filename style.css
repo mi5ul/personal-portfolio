@@ -198,6 +198,7 @@ nav a:hover {
 .bars-wrapper {
 	width: 55%;
 	margin-left: 5%;
+	display: flex;
 }
 
 #myProgress {
@@ -212,4 +213,22 @@ nav a:hover {
   text-align: center; /* To center it horizontally (if you want) */
   line-height: 30px; /* To center it vertically */
   color: white;
+}
+
+#container1,
+#container2 {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.circle-bar {
+	width: 244px;
+}
+
+.circle-bar p {
+	width: 200px;
+	margin: 20px;
+	text-align: center;
 }
