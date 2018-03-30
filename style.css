@@ -103,6 +103,11 @@ nav {
 	align-items: center;
 	padding: 20px 20px;
 	background: rgba(0, 0, 0, 0.4);
+	
+	/* Keeping Navbar fixed */
+	position: fixed;
+	left: 0;
+	right: 0;
 }
 
 nav ul {
@@ -164,4 +169,47 @@ nav a:hover {
 
 .aboutme-text p:last-child {
 	margin-bottom: 0;
+}
+
+/* -------------------- */
+/* SKILLS */
+/* -------------------- */
+
+.section-skills {
+	height: 100vh;
+	background-color: white;
+	color: #0059b3;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.skills-text {
+	width: 45%;
+}
+
+.skills-wrapper {
+	display: flex;
+	width: 70%;
+}
+
+/* ----- SKILLS BAR ----- */
+
+.bars-wrapper {
+	width: 55%;
+	margin-left: 5%;
+}
+
+#myProgress {
+  width: 100%;
+  background-color: grey;
+}
+
+#myBar {
+  width: 10%;
+  height: 30px;
+  background-color: #0059b3;
+  text-align: center; /* To center it horizontally (if you want) */
+  line-height: 30px; /* To center it vertically */
+  color: white;
 }
