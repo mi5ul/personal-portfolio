@@ -185,20 +185,22 @@ nav a:hover {
 }
 
 .skills-text {
-	width: 45%;
+	/*flex-basis: 45%;*/
 }
 
 .skills-wrapper {
 	display: flex;
+	flex-direction: column;
 	width: 70%;
 }
 
 /* ----- SKILLS BAR ----- */
 
 .bars-wrapper {
-	width: 55%;
-	margin-left: 5%;
+	margin-top: 70px;
 	display: flex;
+	justify-content: center;
+
 }
 
 #myProgress {
@@ -216,7 +218,9 @@ nav a:hover {
 }
 
 #container1,
-#container2 {
+#container2,
+#container3,
+#container4 {
   margin: 20px;
   width: 200px;
   height: 200px;
@@ -231,4 +235,33 @@ nav a:hover {
 	width: 200px;
 	margin: 20px;
 	text-align: center;
+}
+
+/* -------------------- */
+/* PROJECT GALLERY */
+/* -------------------- */
+
+.section-project-gallery {
+	height: 100vh;
+	background-color: #0059b3;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: auto;
+}
+
+.section-project-gallery img {
+	max-width: 100%;
+}
+
+#image1 {
+	grid-column: 1 / span 2;
+}
+
+#image2 {
+	grid-column: 3 / span 1;
+}
+
+.project {
+	overflow: hidden;
+	height: 50vh;
 }
