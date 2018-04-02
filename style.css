@@ -203,20 +203,6 @@ nav a:hover {
 
 }
 
-/*#myProgress {
-  width: 100%;
-  background-color: grey;
-}*/
-
-/*#myBar {
-  width: 10%;
-  height: 30px;
-  background-color: #0059b3;
-  text-align: center; 
-  line-height: 30px; 
-  color: white;
-}*/
-
 #container1,
 #container2,
 #container3,
@@ -244,22 +230,65 @@ nav a:hover {
 .section-project-gallery {
 	height: 100vh;
 	background-color: #0059b3;
+	display: flex;
 }
 
 .projects-wrapper {
-	display: grid;
-	grid-template-columns: repeat(3, minmax(200px, 1fr));
-	grid-template-rows: auto;
-	grid-auto-flow: row;
-	grid-gap: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
 	width: 70%;
-	margin: 0 auto;
+	margin: 70px auto;
 }
 
 .project {
-	border: 2px solid white;
+	width: 400px;
+	margin: 5px;
 }
 
-.section-project-gallery img {
-	width: 100%;
+.project:nth-of-type(1) {
+	background: url('http://keyassets.timeincuk.net/inspirewp/live/wp-content/uploads/sites/12/2016/01/16578.jpg');
+	background-size: cover;
+	background-position: center;
 }
+
+.project:nth-of-type(2) {
+	background: url('https://www.publicdomainpictures.net/pictures/30000/velka/the-english-landscape-1335432497B7W.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.project:nth-of-type(3) {
+	background: url('http://www.freelarge-images.com/wp-content/uploads/2014/12/Landscape_01.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.project:nth-of-type(4) {
+	background: url('https://posterjackcanada.files.wordpress.com/2015/02/hdr-landscape-reflections-of-clouds-in-water.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.project:nth-of-type(5) {
+	background: url('https://1.bp.blogspot.com/-TQiNTNxcfJg/ThsKEfccf1I/AAAAAAAAAR8/2i0-56tLzmc/s1600/desktop_landscape_wallpaper.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.project:nth-of-type(6) {
+	background: url('https://blog.phowd.com/wp-content/uploads/2014/11/landscape-photography-light.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.project p {
+	/*visibility: hidden;*/
+}
+
+.project p:hover {
+	visibility: hidden;
+	/*opacity: 0.4;*/
+}
+
+/* Use JS to animate the text over images and opaque background when hovered over */
