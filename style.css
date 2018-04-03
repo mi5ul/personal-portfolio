@@ -292,7 +292,37 @@ nav a:hover {
 	/*opacity: 0.4;*/
 }
 
+#test-btn {
+	height: 40px;
+}
+
+.project-container {
+	width: 25%;
+	position: relative;
+}
+
+.project-container img {
+	width: 100%;
+	height: auto;
+}
+
+.project-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+}
+
+.project-container:hover img {
+	opacity: 0.3;
+}
+
+.project-container:hover .project-text {
+	opacity: 1;
+}
+
 /* Use JS to animate the text over images and opaque background when hovered over */
+/* DO NOT NEED JS - CAN JUST USE CSS */
 
 /* -------------------- */
 /* FOOTER / CONTACT */
