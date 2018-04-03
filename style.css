@@ -8,6 +8,7 @@ html {
 	font-size: 20px;
 	text-rendering: optimizeLegibility;
 	color: white;
+	--blue: #0059b3;
 }
 
 *, *:before, *:after {
@@ -292,3 +293,24 @@ nav a:hover {
 }
 
 /* Use JS to animate the text over images and opaque background when hovered over */
+
+/* -------------------- */
+/* FOOTER / CONTACT */
+/* -------------------- */
+
+footer {
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: var(--blue);
+}
+
+.contact-links {
+	margin-right: 70px;
+}
+
+footer a {
+	color: var(--blue);
+	font-size: 1.5em;
+}
