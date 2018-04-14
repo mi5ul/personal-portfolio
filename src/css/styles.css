@@ -1,4 +1,95 @@
 body {
 	font-size: 20px;
 	font-family: 'Roboto Mono', monospace;
+	/* Define colours */
+	--deep-blue: #1B213B;
+	--main-col: #454A60;
+	--white-gray: #E8E8EE;
+	--white: white;
+}
+
+/* ---------- */
+/* Header and Navigation */
+/* ---------- */
+header {
+	/* --blue: #2D52B6; */
+	background-color: var(--main-col);
+	color: var(--white-gray);
+	height: 100vh;
+}
+
+#my-nav {
+	color: var(--main-col);
+}
+
+#hero-text {
+	text-align: center;
+	padding: 40px;
+	border: 10px solid var(--white-gray);
+}
+
+/* Typed.js modifications */
+#typed {
+	font-size: 3.5em;
+	font-weight: 300;
+}
+
+.typed-cursor {
+	font-size: 3.5em;
+	font-weight: 300;
+}
+
+/* Buttons */
+.main-btn-panel {
+	margin-top: 40px;
+}
+
+#hire-btn {
+	color: var(--main-col);
+	background-color: var(--white-gray);
+	border: 1px solid var(--main-col);
+	border-radius: 0;
+}
+
+#work-btn {
+	background-color: var(--main-col);
+	border: 1px solid var(--white-gray);
+	border-radius: 0;
+}
+
+/* ---------- */
+/* About me section */
+/* ---------- */
+
+.about-me-section {
+	color: var(--main-col);
+	padding: 70px 0;
+}
+
+.profile-img-wrapper {
+	height: 380px;
+	width: 380px;
+	border: 10px solid var(--main-col);
+	border-radius: 50%;
+	background-image: url('../img/mirtsuljic_photo.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+/* ---------- */
+/* Skills section */
+/* ---------- */
+
+.skills-section {
+	background-color: var(--white-gray);
+	color: var(--deep-blue);
+	padding: 70px 0;
+}
+
+/* Progress bars */
+#container {
+  margin: 20px;
+  width: 200px;
+  height: 200px;
+  position: relative;
 }
