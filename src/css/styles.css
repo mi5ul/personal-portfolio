@@ -87,13 +87,19 @@ header {
 }
 
 /* Progress bars */
-#container {
+.progressbar {
   margin: 20px;
   width: 200px;
   height: 200px;
   position: relative;
 }
 
-.progresbar-icon {
-	
+.progressbar-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.progressbar-icon {
+	font-size: 2em;
 }
