@@ -1,5 +1,6 @@
 import Typed from 'typed.js';
 import ProgressBar from 'progressbar.js';
+require('waypoints/lib/noframework.waypoints.js')
 
 // Typing animation
 var options = {
@@ -51,8 +52,19 @@ const animateProgressBar = (container, pathPercent) => {
 const progressbarContainers = [
   ['#container1', 0.8],
   ['#container2', 0.7],
-  ['#container3', 0.5]
+  ['#container3', 0.5],
+  ['#container4', 0.2],
+  ['#container5', 0.5],
+  ['#container6', 0.4]
 ];
+
+var waypoint = new Waypoint({
+  element: document.getElementById('waypoint'),
+  handler: function(direction) {
+    console.log('Scrolled to waypoint!');
+
+  }
+})
 
 for (let cont of progressbarContainers) {
   animateProgressBar(cont[0], cont[1]);

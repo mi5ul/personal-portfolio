@@ -25,6 +25,7 @@
   },
   "dependencies": {
     "progressbar.js": "^1.0.1",
-    "typed.js": "^2.0.6"
+    "typed.js": "^2.0.6",
+    "waypoints": "^4.0.1"
   }
 }

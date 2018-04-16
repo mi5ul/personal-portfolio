@@ -88,9 +88,9 @@ header {
 
 /* Progress bars */
 .progressbar {
-  margin: 20px;
-  width: 200px;
-  height: 200px;
+  margin: 10px;
+  width: 150px;
+  height: 150px;
   position: relative;
 }
 
@@ -101,5 +101,9 @@ header {
 }
 
 .progressbar-icon {
-	font-size: 2em;
+	font-size: 1.5em;
+}
+
+.progressbar-container span {
+	font-size: 1.5em;
 }
