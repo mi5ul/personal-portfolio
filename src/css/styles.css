@@ -107,3 +107,27 @@ header {
 .progressbar-container span {
 	font-size: 1.5em;
 }
+
+/* ---------- */
+/* Projects section */
+/* ---------- */
+
+.projects-section {
+	margin: 40px 0;
+}
+
+.project {
+	height: 50vh;
+	/* width: 33.3%; */
+}
+
+.project img {
+	height: 100%;
+	width: auto;
+	/* overflow: hidden; */
+
+}
+
+.projects-container .row {
+	justify-content: center;
+}

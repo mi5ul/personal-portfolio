@@ -11,6 +11,7 @@ var options = {
 var typed = new Typed("#typed", options);
 
 // Progress bars animation
+
 const animateProgressBar = (container, pathPercent) => {
   // progressbar.js@1.0.0 version is used
   // Docs: http://progressbarjs.readthedocs.org/en/1.0.0/
@@ -61,11 +62,11 @@ const progressbarContainers = [
 var waypoint = new Waypoint({
   element: document.getElementById('waypoint'),
   handler: function(direction) {
-    console.log('Scrolled to waypoint!');
-
+    if (direction === 'down') {
+      for (let cont of progressbarContainers) {
+        animateProgressBar(cont[0], cont[1]);
+      }
+      waypoint.destroy();
+    }
   }
 })
-
-for (let cont of progressbarContainers) {
-  animateProgressBar(cont[0], cont[1]);
-}
